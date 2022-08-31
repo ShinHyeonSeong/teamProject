@@ -1,8 +1,13 @@
+# 프로젝트 저장소
+DB / C# / 융합프로젝트 / 졸작(예상)
 
-# 융합프로젝트 저장소
+## Notion
+https://www.notion.so/For-Health-c41ebcc0d80a43f4872ac71a8ded3157
 
-## 사용자
 
-|  이름  |           이메일            |          역할             |
-| 박종혁 | parkjonghyeok2000@gmail.com | 기획, 발표, 디자인, 풀스택 |
-| 신현성 | --------------------------- | 기획, 디자인, 풀스택       |
+##  Repository Participant
+
+| 이름   | Email                               | kakaoTalk |
+| ------ | ------------------------------------ | --------- |
+| 박종혁 | parkjonghyeok2000@gmail.com| willbehappy13 |
+
