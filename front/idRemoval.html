@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <link rel="stylesheet" href="css/styles.css" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codrive</title>
+</head>
+<body>
+    <div id="headerWrapper">
+        <div>
+            <a id="logo" href="index.html">For Health</a>
+        </div>
+        <div id="headerTextWrapper">
+            <a class="headerTexts" href="#">코딩공부</a>
+            <a class="headerTexts" href="#">학교생활</a>
+            <a class="headerTexts" href="main.html">게시판</a>
+        </div>
+        <div id="headerTextMypageWrapper">
+            <a class="headerTexts headerTextLogin" href="index.html">로그아웃</a>
+        </div>
+    </div>
+
+    <div id="mypageWrapper">
+        <div id="mypageMain">
+            <div id="mypageText"><h1>마이페이지</h1></div>
+            <div id="mypageContentsWrapper">
+                <div id="mypageContentTag">
+                    <div class="tags"><a href="mypage.html" ><span>내 정보</span></a></div>
+                    <div class="tags"><a href="#" ><span>내가 쓴 글</span></a></div>
+                    <div class="tags" id="idRemovalClick"><a href="idRemoval.html"><span><strong>회원탈퇴</strong></span></a></div>
+                </div>
+                <div id="mypageContentInfor">
+                    <form>
+                        <h2>회원탈퇴 시 계정복구가 불가합니다.</h2>
+                        <div id="idRemovalCheck"><input type="checkbox" id="remove"> 동의합니다. </div>
+                        <div id="idRemovalCheckBtt"><input type="submit" value="회원탈퇴" required></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
