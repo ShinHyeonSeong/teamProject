@@ -17,16 +17,23 @@ h1 {
 
 .content {
     /*중간 콘텐츠 글자*/
-    font-size: 22px;
+    font-size: 20px;
     font-weight: lighter;
+}
+
+.content_bold {
+    /*중간 콘텐츠 글자 bold형*/
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .content2 {
     /*작은 콘텐츠 글자*/
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 100;
 }
 
+/*공통요소 끝*/
 .header {
     display: flex;
     justify-content: flex-end;
@@ -48,8 +55,8 @@ h1 {
 .intro_background {
     /*배경화면*/
     background-image: url("img/intro.png");
-    width: 50%x;
-    height :720px;
+    width: 100%;
+    height: 720px;
 }
 
 .intro_background>p {
@@ -65,9 +72,7 @@ h1 {
     height: 86px;
 }
 
-.header_logo{
-
-}
+.header_logo {}
 
 .header_content {
     width: calc(1280px - 500px);
@@ -126,7 +131,7 @@ h1 {
     color: #fff;
 }
 
-.middle_list {
+.middle_nav {
     position: relative;
     top: -66px;
     display: flex;
@@ -136,19 +141,143 @@ h1 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.middle_list>li {
+.middle_nav>li {
     flex: 1;
     height: 132px;
     background-color: #fff;
 }
 
-.middle_list>li>div {
+.middle_nav>li>div {
     text-align: center;
 
     margin-top: 37px;
     height: 57px;
 }
 
-.middle_list>li:not(:last-child)>div {
+.middle_nav>li:not(:last-child)>div {
     border-right: 1px solid gray;
+}
+
+
+/*middle_menu*/
+.middle_menu {
+    width: 100%;
+    height: 601px;
+    margin-top: -132px;
+    background: #f1f2f3;
+}
+
+.middle_menu>h1 {
+    padding-top: 116px;
+    text-align: center;
+
+}
+
+.middle_menu>.content {
+    text-align: center;
+
+}
+
+.middle_menu>.middle_icons {
+    display: flex;
+    width: 1280px;
+    height: 302px;
+    margin: auto;
+}
+
+.middle_icons>li {
+    text-align: center;
+    margin-top: 49px;
+    flex: 1;
+    background: #fff;
+    height: 302px;
+}
+
+.middle_icons>li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.middle_icons>li>.icons_img1 {
+    margin-top: 20px;
+}
+
+.middle_menu .content2 {
+    width: 240 px;
+    margin: auto;
+    letter-spacing: -1px;
+}
+
+.middle_icons_button {
+    width: 120px;
+    height: 30px;
+    margin: auto;
+    line-height: 30px;
+    font-size: 12px;
+    background: rgb(112, 112, 229);
+    margin: 25px auto;
+    color: #fff;
+}
+
+
+/*middle_text*/
+.middle_text {
+    width: 100%;
+    height: 659px;
+}
+
+.middle_text>h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.middle_text>.content {
+    text-align: center;
+}
+
+.middle_text_intro {
+    width: 1280px;
+    display: flex;
+    margin: 49px auto;
+    background: skyblue;
+    height: 427px;
+}
+
+.middle_text_intro>.content2 {
+    padding-left: 20px;
+}
+
+.middle_text_intro>.content2>h2 {
+    margin-bottom: 27px;
+}
+
+/*middle_text2*/
+.middle_text2 {
+    width: 100%;
+    height: 418px;
+    background-image: url("img/contact.png");
+}
+
+.middle_text2>ul {
+    display: flex;
+    padding-top: 138px;
+
+}
+
+.middle_text2>ul>li {
+    flex: 1;
+    text-align: center;
+}
+
+.middle_text2>ul>li>div>h1,
+.middle_text2>ul>li>div{
+    color: #fff;
+    margin-top: 5px;
+}
+.middle_text2_button{
+    width: 220px;
+    height: 40px;
+    margin: 35px auto;
+    border: 1px solid #fff;
+    cursor: pointer; /*커서를 올렸을때 포인터 즉 버튼 처럼 클릭할 수 있는 마우스포인터 생성*/
+    line-height: 40px;
 }
