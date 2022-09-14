@@ -1,0 +1,154 @@
+* {
+    /*전체 폰트 지정*/
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    /*제목 글자*/
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.content {
+    /*중간 콘텐츠 글자*/
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.content2 {
+    /*작은 콘텐츠 글자*/
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header>li {
+    margin-right: 15px;
+    padding-top: 10px;
+}
+
+.header>li>a {
+    color: #fff;
+    font-size: 15px;
+    color: #fff;
+    opacity: 1;
+    justify-content: flex-end;
+}
+
+.intro_background {
+    /*배경화면*/
+    background-image: url("img/intro.png");
+    width: 50%x;
+    height :720px;
+}
+
+.intro_background>p {
+    color: white;
+    justify-content: flex-end;
+
+}
+
+.header_nav {
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    height: 86px;
+}
+
+.header_logo{
+
+}
+
+.header_content {
+    width: calc(1280px - 500px);
+    display: flex;
+    justify-content: center;
+    line-height: 86px;
+}
+
+.header_content>li {
+    margin-left: 84px;
+
+}
+
+.header_content>li>a {
+    color: #fff;
+    opacity: 1;
+}
+
+.header_searchArea {
+    width: 150px;
+    height: 40px;
+    background: rgba(0, 0, 0, 50%);
+    border-radius: 5px;
+    margin-top: 24px;
+    justify-content: flex-end;
+}
+
+.header_searchArea>form>span {
+    width: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header_searchArea>form>input {
+    /*검색 창 설정*/
+    border: none;
+    width: 250px;
+    height: 40px;
+    color: white;
+    padding-left: 10px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.intro_text {
+    width: 100%;
+    margin: 231px auto 231px auto;
+    text-align: center;
+}
+
+.intro_text>h1 {
+    color: #fff;
+}
+
+.intro_text>p {
+    color: #fff;
+}
+
+.middle_list {
+    position: relative;
+    top: -66px;
+    display: flex;
+    margin: auto;
+    width: 1280px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.middle_list>li {
+    flex: 1;
+    height: 132px;
+    background-color: #fff;
+}
+
+.middle_list>li>div {
+    text-align: center;
+
+    margin-top: 37px;
+    height: 57px;
+}
+
+.middle_list>li:not(:last-child)>div {
+    border-right: 1px solid gray;
+}
