@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content_mid="IE=edge">
+    <meta name="viewport" content_mid="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>layout1</title>
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <link rel="stylesheet" href="/style/backlogo.css">
 </head>
 
 <body>
@@ -39,9 +40,56 @@
                     </div>
                 </div>
 
-                <div class="intro_text">
-                    <h1>신현성 바보 멍청이 해삼 말미잘 덩어리 이게 바로 제목이다</h1>
-                    <p class="content">이건 부제목이다~~~~</p>
+                <div>
+                    <div class="header_logo">
+
+                        <!--Content before waves-->
+                        <div class="inner-header flex">
+                            <!--Just the logo.. Don't mind this-->
+                            <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 500 500" xml:space="preserve">
+                                <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10"
+                                    d="M57,283" />
+
+                                <!-- 로고 자리 -->
+                                <!-- <g> -->
+                                <!-- <path fill="#fff"
+                                        d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+                      C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+                      c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+                                </g> -->
+                            </svg>
+                            <h1>오늘보다 더 나은 내일을 위해</h1>
+                        </div>
+
+                        <!--Waves Container-->
+                        <div>
+                            <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                                preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                    <path id="gentle-wave"
+                                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                </defs>
+                                <g class="parallax">
+                                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                                </g>
+                            </svg>
+                        </div>
+                        <!--Waves end-->
+
+                    </div>
+                    <!--Header ends-->
+
+                    <!--Content starts-->
+                    <div class="content flex">
+                        <p>By.Goodkatz | Free to use </p>
+                    </div>
+                    <!--Content ends-->
                 </div>
             </div>
         </div>
@@ -51,25 +99,29 @@
         <ul class="middle_nav">
             <li>
                 <div>
-                    <div class="content">운동 환산기</div>
+                    <div class="content_mid
+                    ">운동 환산기</div>
                     <div class="contetn1">환산기 서비스</div>
                 </div>
             </li>
             <li>
                 <div>
-                    <div class="content">지금 우리 체육관</div>
+                    <div class="content_mid
+                    ">지금 우리 체육관</div>
                     <div class="contetn1">지도서비스</div>
                 </div>
             </li>
             <li>
                 <div>
-                    <div class="content">랭킹 인더 뱅킹</div>
+                    <div class="content_mid
+                    ">랭킹 인더 뱅킹</div>
                     <div class="contetn1">순위표</div>
                 </div>
             </li>
             <li>
                 <div>
-                    <div class="content">오늘의 기록</div>
+                    <div class="content_mid
+                    ">오늘의 기록</div>
                     <div class="contetn1">캘린더</div>
                 </div>
             </li>
@@ -79,17 +131,18 @@
 
         <div class="middle_menu">
             <h1>ABOUT</h1>
-            <div class="content">부제목목</div>
+            <div class="content_mid
+            "></div>
             <ul class="middle_icons">
                 <li>
                     <div class=icons_img1>
                         <img src="img/icon2.svg">
                     </div>
                     <div class="content_bold">
-                        글자글자 우수수
+                        마이 페이지
                     </div>
-                    <div class="content2">
-                        글자글자 옥수수 좀만 더 길어야 볼 수 있어 우어어ㅓ
+                    <div class="content_small">
+                        하루하루 달라지는 나
                     </div>
                     <div class="middle_icons_button">
                         BUTTON
@@ -100,10 +153,10 @@
                         <img src="img/icon0.svg">
                     </div>
                     <div class="content_bold">
-                        글자글자 우수수
+                        Calender
                     </div>
-                    <div class="content2">
-                        글자글자 옥수수 좀만 더 길어야 볼 수 있어 우어어ㅓ
+                    <div class="content_small">
+                        매일매일 기록해보아요.
                     </div>
                     <div class="middle_icons_button">
                         BUTTON
@@ -114,11 +167,10 @@
                         <img src="img/icon1.svg">
                     </div>
                     <div class="content_bold">
-                        글자글자 우수수
+                        오늘의 체육관
                     </div>
-                    <div class="content2">
-                        글자글자 옥수수 좀만 더 길어야 볼 수 있어 우어어ㅓ
-                    </div>
+                    <div class="content_small">
+                        오늘의 체육관 추천 </div>
                     <div class="middle_icons_button">
                         BUTTON
                     </div>
@@ -129,50 +181,37 @@
 
 
         <div class="middle_text">
-            <h1>Service</h1>
-            <div class="content">부부제목</div>
+            <h1>For Health란?</h1>
+            
             <div class="middle_text_intro">
                 <div class="middle_text_intro_img">
                     <img src="img/food.png">
                 </div>
-                <div class="content2">
-                    <h2>소개제목글</h2>
-                    <br>난 말이야 매일매일 학과 스터디룸을 갔다가 거기 퇴근할 시간 맞춰서 비워주고 말이야
-                    <br>어 얼마나 힘들게 또 이 무거운 노트북을 들고 다시 도서관에 와서 스터디룸에서 아니 이 부분도 너무 억울한게
-                    <br>키보드 치는 소리 때문에 방해 될까봐 스터디룸을 또 따로 잡아야 하는 수고로움을 해야해
-                    <br>
-                    <br>그리고 나서 다 먹고 살자고 하는 일이니까 밥은 또 먹어야 될거 아니야 근데 석식을 맨날 하지는 않는가벼
-                    <br>그래가지고 석식 없을때는 라면만 먹지 진짜 집밥 안먹어본게 28년전이야 내가 지금 나이가 23살인데
-                    <br>
-                    <br>
-                    <br>허 참 어이가 없네 그래서 스터디룸에서 이렇게 3시간 정도 잡고있으면 9시가 되더라고
-                    <br>그러면 또 여기 사람들이 퇴근을 하네 그러면 난 또 긱사에서 마무리를 짓고 자지
-                    <br>긱사에서 끝까지 하면 되지 않냐고? 너넨 집에서 공부 잘되냐? 약간 고런느낌
-                    <br>다른데서 먼저 예열을 식혀줘야 그 유혹이 가득한 긱사에서 공부를 쪼오금이나마 이어나갈 수 있다는 말씀이야 인생 참,,,
+                <div class="content_bold">
+                    
+                    
+                    <br>매일 매일 운동을 꾸준히 해야 조금씩 변화하는 나의 몸
+                    <br>어쩌면 정말 지겨울 수 있을 겁니다.
+                    <br>그래서 우리는 그 지겨움을 조금이라도 재미있게 전환해보기 위해
+                    <br>여러분들께 서비스를 제공해봅니다.
                 </div>
             </div>
         </div>
         <!-- middle_text end -->
 
 
-        <div class="middle_text2">
-            <ul>
-                <li>
-                    <div>
-                        <h1>CONTACT</h1>
-                    </div>
-                    <div>난 정말 여기까지만 만들고 싶지만 욕심이 난다.ㄴ</div>
-                    <div class="middle_text2_button">BUTTON</div>
-                </li>
-                <li></li>
-            </ul>
-        </div>
-        <!-- middle_text2 end -->
+     
 
 
         <footer>
             <div>LOGO</div>
-            <div>asdasd</div>
+            <div class=content_sma>개발자 : 박종혁, 신현성 (가나다 순임)
+                <br>
+                Tel. 010-0000-0000
+                <br>
+                COPYRIGHT. 무수히 많은 구글링
+                <br><br><br><br><br>
+            </div>
         </footer>
     </div>
     </div>
