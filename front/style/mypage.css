@@ -1,0 +1,133 @@
+* {
+    /*전체 폰트 지정*/
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+label { margin-right: 10px; }
+
+/* 사이드바 할까 말까 하 넣으면 이쁠거 같은데 */
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: #263343;
+    position: fixed;
+    top: 0;
+}
+
+/* 상단 메인 유저 정보 */
+.userinfo_Main {
+    display: flex;
+    /*box-shadow: 0 0px 10px rgb(0,0,0, 0.9);*/
+    justify-content: center;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.userinfo {
+    display: flex;
+    width: 1200px;
+    height: 200px;
+    background-color: #263343;
+    border-radius: 20px;
+}
+
+.user_image { padding: 80px; }
+
+.userinfo_intro { display: inline-block }
+
+.nickname {
+    padding-top: 60px;
+    font-size: 30px;
+    font: bold;
+}
+
+.self_intro {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.correction {
+    margin-left: 150px;
+    line-height: 200px;
+}
+
+.tag {
+    margin-top: 90px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.tagg {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 1500px;
+}
+
+.tagg > div {
+    margin: 0 80px;
+    padding: 0 70px;
+    line-height: 50px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    background-color: #333f4d;
+    width: 100px;
+    height: 50px;
+}
+
+/* 메인 컨텐츠*/
+.convert {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1480px;
+    height: 750px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding-top: 10px;
+}
+
+.convert > li {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+    width: 1500px;
+    height: 80px;
+    background-color: #263343;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.convert > li > div{
+    margin: 0 80px;
+    padding: 0 70px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 12px;
+    width: 100px;
+}
+
+.convert > li .convert_image{
+    margin-top: 70px;
+}
+
+.convert > li .convert_result {
+    margin-top: 50px;
+}
+
+.graph {
+    margin: 20px auto;
+    width: 1500px;
+    height: 600px;
+    align-self: center;
+    background-color: #333f4d;
+}
