@@ -3,7 +3,6 @@
     list-style: none;
     text-decoration: none;
     border-collapse: collapse;
-    margin: 0px;
     padding: 0px;
     color: #000;
     font-family: 'Noto Sans KR', sans-serif;
@@ -35,10 +34,10 @@
 
 /*공통요소 끝*/
 
-
+/*middle nav*/
 .middle_nav {
     position: relative;
-    top: -100px;
+    top: 50px;
     display: flex;
     margin: auto;
     width: 1280px;
@@ -48,14 +47,13 @@
 
 .middle_nav>li {
     flex: 1;
-    height: 132px;
+    height: 120px;
     background-color: #fff;
 }
 
 .middle_nav>li>div {
     text-align: center;
-
-    margin-top: 37px;
+    margin-top: 60px;
     height: 57px;
 }
 
@@ -63,6 +61,7 @@
     border-right: 1px solid gray;
 }
 
+/*middle nav --- end*/
 
 /*middle_menu*/
 .middle_menu {
@@ -146,7 +145,6 @@
     background: #fff;
     height: 427px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-
 }
 
 .middle_text_intro>.content2 {
@@ -159,18 +157,20 @@
 
 
 
-footer{
+footer {
     display: flex;
     background-color: rgb(96, 94, 94);
     padding-top: 20px;
 }
-footer>div:first-child{
+
+footer>div:first-child {
     text-align: center;
     color: #fff;
-    flex:3;
+    flex: 3;
 
 }
-footer> div:last-child{
+
+footer>div:last-child {
     flex: 9;
     color: #fff;
 }
