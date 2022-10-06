@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/navbar_style.css">
+    <link rel="stylesheet" href="/style/navbar.css">
     <script src="js/jquery-3.6.1.min.js"></script>
-    <script language="javascript" type="text/javascript" src="../js/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="/style/style_rank.css">
+    <script language="javascript" type="text/javascript" src="/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style/rank.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-
     <title>순위페이지</title>
 </head>
 
@@ -18,16 +17,16 @@
     <header>
         <div>
             <nav class="navbar">
-                <div class="navbar_logo"><a href="">대충 로고</a></div>
+                <div class="navbar_logo"><a th:href="@{/index}">대충 로고</a></div>
                 <ul class="navbar_menu">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SERVICE</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a th:href="@{/index}">HOME</a></li>
+                    <li><a th:href="@{/convert}">CONVERT</a></li>
+                    <li><a th:href="@{/write}">WRITE</a></li>
+                    <li><a th:href="@{/rank}">RANK</a></li>
                 </ul>
                 <ul class="navbar_link">
-                    <li><a href="">로그인</a></li>
-                    <li><a href="">회원가입</a></li>
+                    <li><a th:href="@{/login}">로그인</a></li>
+                    <li><a th:href="@{/join}">회원가입</a></li>
                 </ul>
             </nav>
             <!-- navbar end -->
@@ -54,15 +53,14 @@
                 </div>
             </li>
             <li class="main_right">
-                <h2>MY RANK</h2>
+                ss
             </li>
         </ul>
     </div>
 
     <footer>
         <div>LOGO</div>
-        <div class=content_small>
-            개발자 : 박종혁, 신현성 (가나다 순임)
+        <div class=content_sma>개발자 : 박종혁, 신현성 (가나다 순임)
             <br>
             Tel. 010-0000-0000
             <br>

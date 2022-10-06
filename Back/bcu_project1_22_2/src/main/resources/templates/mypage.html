@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style/mypage.css">
+  <link rel="stylesheet" href="/style/navbar.css">
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <title>mypage</title>
+  <script language="javascript" type="text/javascript" src="js/nav_script.js"></script>
+</head>
+
+<body>
+  <!--상단 내비바-->
+  <div class="wrap">
+    <header>
+      <nav class="navbar">
+        <div class="navbar_logo"><a th:href="@{/index}">대충 로고</a></div>
+        <ul class="navbar_menu">
+          <li><a th:href="@{/index}">HOME</a></li>
+          <li><a th:href="@{/convert}">CONVERT</a></li>
+          <li><a th:href="@{/write}">WRITE</a></li>
+          <li><a th:href="@{/rank}">RANK</a></li>
+        </ul>
+        <ul class="navbar_link">
+          <li><a th:href="@{/login}">로그인</a></li>
+          <li><a th:href="@{/join}">회원가입</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--사이드바 할까 말까 하 넣으면 이쁠거 같은데
+    <div class="sidebar">
+      
+    </div>
+    -->
+
+    <!--상단 유저 정보-->
+    <div class="userinfo_Main">
+      <div class="userinfo">
+        <img src="" class="user_image" alt="userimage">
+        <div class="userinfo_intro">
+          <div class="nickname">닉네임</div>
+          <div class="self_intro">오늘 하루도 활기차게!</div>
+        </div>
+        <div class="correction"><a href="">내 정보 수정</a></div>
+        <div class="correction"><a href="">내 정보 수정</a></div>
+        <div class="correction"><a href="">내 정보 수정</a></div>
+      </div>
+    </div>
+
+
+    <!--메인 컨텐츠-->
+    <div class="tag">
+      <div class="tagg">
+        <div class="tag_date">날짜</div>
+        <div class="tag_event">운동 종목</div>
+        <div class="tag_time">운동 시간</div>
+        <div class="tag_kal">칼로리</div>
+      </div>
+    </div>
+
+    <div class="exercise_info">
+      <ul class="convert">
+        <!--1번-->
+        <li class="convert_list">
+          <div>0915</div>
+          <div>팔굽혀펴기</div>
+          <div>1시간20분</div>
+          <div>800kcal</div>
+        </li>
+        <!--2번-->
+        <li class="convert_list">
+          <div>0916</div>
+          <div>달리기</div>
+          <div>2시간10분</div>
+          <div>1024kcal</div>
+        </li>
+  
+        <!--3번-->
+        <li>
+          <div>0917</div>
+          <div>레그레이즈</div>
+          <div>50분</div>
+          <div>535kcal</div>
+        </li>
+        <!--4번-->
+        <li>
+          <div>0918</div>
+          <div>사이드레터럴레이즈</div>
+          <div>1시간</div>
+          <div>415kcal</div>
+        </li>
+        <!--5번-->
+        <li>
+          <div>0919</div>
+          <div>달리기</div>
+          <div>1시간30분</div>
+          <div>1003kcal</div>
+        </li>
+        <!--6번-->
+        <li>
+          <div>0920</div>
+          <div>윗몸일으키기</div>
+          <div>30분</div>
+          <div>250kcal</div>
+        </li>
+        <!--7번-->
+        <li>
+          <div>슈발왜</div>
+          <div>다섯글자이</div>
+          <div>상안들어가</div>
+          <div>는거지왜?</div>
+        </li>
+      </ul>
+    </div>
+
+    <!--그래프-->
+    <div class="graph">그래프 들어갈 자리..?</div>
+  </div>
+</body>
+
+</html>

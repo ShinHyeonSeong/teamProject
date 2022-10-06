@@ -1,0 +1,128 @@
+body {margin: 0;}
+
+header {
+    transition: 0.3s;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {text-decoration: none;}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff;
+    padding: 8px 12px;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: white;
+    padding-left: 15px;
+}
+
+.navbar_logo a {
+    color: #c7b299;
+}
+
+.navbar_menu {
+    display: flex ;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    padding: 8px 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar ul li a {
+    color: #c7b299;
+}
+
+.navbar_menu li:hover {
+    background-color: #f1eee9;
+    border-radius: 4px;
+}
+
+.navbar_link {
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar_link li {
+    padding: 8px 32px;
+
+}
+
+/*네비게이션 바 페이지 너비 변화 시 스타일*/
+
+@media screen and (max-width: 768px) {
+    .scrolled .navbar {
+        height: 200px;
+    }
+
+    header.scrolled {
+        height: 260px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+        height: 250px;
+    }
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_link {
+        justify-content: center;
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+/*네비게이션 바 스크롤 하강 시 스타일*/
+
+header.scrolled {
+    position: fixed;
+    padding: 4px 0px;
+    background-color: #263343;
+    box-shadow: 0 2px 2px rgb(0,0,0,.3);
+    width: 100%;
+}
+
+.scrolled .navbar {
+    background-color: #263343;
+    height: 40px;
+}
+
+.scrolled .navbar_logo a{
+    color: white;
+}
+
+header.scrolled nav ul li a {
+    color: white;
+}
+
+.scrolled .navbar_menu li:hover {
+    background-color: rgb(90, 90, 230);
+    border-radius: 4px;
+}

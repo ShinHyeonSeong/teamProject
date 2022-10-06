@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content_mid="IE=edge">
+    <meta name="viewport" content_mid="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap?after" rel="stylesheet">
+    <title>layout1</title>
+    <link rel="stylesheet" type="text/css" href="/style/index.css">
+    <link rel="stylesheet" href="/style/backlogo.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../static/js/script.js"></script>
+</head>
+
+<body>
+<header>
+    <div>
+        <nav class="navbar">
+            <div class="navbar_logo"><a href="#">대충 로고</a></div>
+            <ul class="navbar_menu">
+                <li><a href="">HOME</a></li>
+                <li><a th:href="@{/convert}">CONVERT</a></li>
+                <li><a th:href="@{/write}">WRITE</a></li>
+                <li><a th:href="@{/rank}">RANK</a></li>
+            </ul>
+            <ul class="navbar_link">
+                <li><a th:href="@{/login}">로그인</a></li>
+                <li><a th:href="@{/join}">회원가입</a></li>
+            </ul>
+        </nav>
+        <!-- navbar end -->
+    </div>
+
+</header>
+<div>
+    <intro_background>
+        <div class="header_logo">
+            <!--Content before waves-->
+            <div class="inner-header flex">
+                <!--Just the logo.. Don't mind this-->
+                <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
+                     xml:space="preserve">
+                        <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283"/>
+                    <!-- 로고 자리 -->
+                    <!-- <g> -->
+                    <!-- <path fill="#fff"
+                                    d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+                  C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+                  c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+                            </g> -->
+                    </svg>
+                <h1>오늘보다 더 나은 내일을 위해</h1>
+            </div>
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7"/>
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"/>
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"/>
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"/>
+                    </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+        </div>
+        <!--Header ends-->
+    </intro_background>
+</div>
+<div>
+    <ul class="middle_nav">
+        <li>
+            <div class=content_mid>
+                For Health와 함께 매일 운동해보아요.
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--middle_nav end-->
+<div class="middle_menu">
+    <h1>ABOUT</h1>
+    <div class="content_mid"></div>
+    <ul class="middle_icons">
+        <li>
+            <div class=icons_img1>
+                <img src="/src/main/resources/static/img/icon2.svg">
+            </div>
+
+            <div class="content_bold">
+                마이 페이지
+            </div>
+            <div class="content_small">
+                하루하루 달라지는 나
+            </div>
+            <div class="middle_icons_button">
+                <a th:href="@{/mypage}">BUTTON</a>
+            </div>
+        </li>
+        <li>
+            <div class=icons_img1>
+                <img src="/static/img/icon0.svg">
+            </div>
+            <div class="content_bold">
+                Calender
+            </div>
+            <div class="content_small">
+                매일매일 기록해보아요.
+            </div>
+            <div class="middle_icons_button">
+                BUTTON
+            </div>
+        </li>
+        <li>
+            <div class=icons_img1>
+                <img src="img/icon1.svg">
+            </div>
+            <div class="content_bold">
+                오늘의 체육관
+            </div>
+            <div class="content_small">
+                오늘의 체육관 추천
+            </div>
+            <div class="middle_icons_button">
+                BUTTON
+            </div>
+        </li>
+    </ul>
+</div>
+<!--middle_menu end-->
+<div class="middle_text">
+    <h1>For Health란?</h1>
+
+    <div class="middle_text_intro">
+        <div class="middle_text_intro_img">
+            <img src="*">
+        </div>
+        <div class="content_bold">
+
+
+            <br>매일 매일 운동을 꾸준히 해야 조금씩 변화하는 나의 몸
+            <br>어쩌면 정말 지겨울 수 있을 겁니다.
+            <br>그래서 우리는 그 지겨움을 조금이라도 재미있게 전환해보기 위해
+            <br>여러분들께 서비스를 제공해봅니다.
+        </div>
+    </div>
+</div>
+<!-- middle_text end -->
+<footer>
+    <div>LOGO</div>
+    <div class=content_sma>개발자 : 박종혁, 신현성 (가나다 순임)
+        <br>
+        Tel. 010-0000-0000
+        <br>
+        COPYRIGHT. 무수히 많은 구글링
+        <br><br><br><br><br>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

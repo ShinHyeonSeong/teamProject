@@ -1,0 +1,25 @@
+plugins {//start spring 에서 설정한 spring 설정값
+	id 'org.springframework.boot' version '2.7.3'
+	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+	id 'java'
+}
+
+group = 'bcu'//설정된 그룹이름
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '8' //자바버젼
+
+repositories { //dependencies 의 설정된 라이브러리를 가지고 있는 설정값
+	mavenCentral()
+}
+
+dependencies { //import할 외부 라이브러리의 설정값
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	developmentOnly("org.springframework.boot:spring-boot-devtools")
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
